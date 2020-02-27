@@ -36,6 +36,7 @@ spec:
 				container("vscode-builder") {
 					sh '''
 					pwd
+                    ls -la
 					npm ci
 					npm run vscode:prepublish
 					npm i vsce
