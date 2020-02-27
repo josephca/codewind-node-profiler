@@ -44,7 +44,7 @@ spec:
 					npx vsce package
 					echo "Extension build complete"
 					ls -la
-					rm codewind-ls-node-prof-19.3.0.vsix
+					rm codewind-ls-node-prof-0.9.0.vsix
 					ls -la
 				'''
 				}
