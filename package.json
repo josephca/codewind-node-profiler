@@ -1,9 +1,9 @@
 {
-	"name": "codewind-node-profiler",
-	"displayName": "Codewind Node.js Profiler",
-	"description": "Code Highlighting for Eclipse Codewind's Node.js Load Testing",
+	"name": "codewind-ls-node-prof",
+	"displayName": "Codewind Language Server for Node.js Profiling",
+	"description": "Code Highlighting for Codewind's JavaScript Load Testing",
 	"version": "0.9.0",
-	"author": "",
+	"author": "IBM",
 	"publisher": "IBM",
 	"license": "EPL-2.0",
 	"categories": [
@@ -16,7 +16,7 @@
 		"Profiling",
 		"JavaScript",
 		"Load",
-		"Eclipse"
+		"IBM"
 	],
 	"icon": "res/img/codewind.png",
 	"homepage": "https://www.eclipse.org/codewind/",

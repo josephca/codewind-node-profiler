@@ -1,13 +1,11 @@
-/*******************************************************************************
- * Copyright (c) 2019 IBM Corporation and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v2.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v20.html
+/********************************************************************************
+ * Licensed Materials - Property of IBM "Restricted Materials of IBM"
  *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ * Copyright IBM Corp. 2019 All Rights Reserved
+ *
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ******************************************************************************/
 'use strict';
 
 import * as assert from 'assert';
@@ -23,13 +21,13 @@ describe('Should get diagnostics', () => {
         message: 'Function example() was the running function in 30.22% of samples.',
         range: toRange(6, 0, 6, 9999),
         severity: vscode.DiagnosticSeverity.Warning,
-        source: 'Codewind Node.js Profiling',
+        source: 'Codewind Language Server',
       },
       {
         message: 'Function <anonymous function> was the running function in 63.19% of samples.',
         range: toRange(0, 0, 0, 9999),
         severity: vscode.DiagnosticSeverity.Warning,
-        source: 'Codewind Node.js Profiling' },
+        source: 'Codewind Language Server' },
     ]);
   });
 });

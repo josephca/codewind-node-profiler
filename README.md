@@ -1,7 +1,4 @@
 
-# Codewind Node.js Profiler
-=======
-
 # Codewind Language Server for Node.js Profiling
 ![platforms](https://img.shields.io/badge/runtime-Java%20%7C%20Swift%20%7C%20Node-yellow.svg)
 [![License](https://img.shields.io/badge/License-EPL%202.0-red.svg?label=license&logo=eclipse)](https://www.eclipse.org/legal/epl-2.0/)
@@ -18,7 +15,7 @@ The Codewind language server for Node.js profiling annotates your Node.js code w
 
 ## Developing the extension with VS Code
 1. Clone the `codewind-node-profiler` repository locally.
-2. Run `npm install` in the cloned `codewind-node-profiler` folder. This command installs all necessary npm modules in both the client and server folder.
+2. Run `npm install` in the cloned `codewind-ls-node-prof` folder. This command installs all necessary npm modules in both the client and server folder.
 3. Open the clone of the `codewind-node-profiler` repository in VS Code.
 4. Press **Ctrl**+**Shift**+**B** on Windows or **Cmd**+**Shift**+**B** on Mac to compile the client and server.
 5. Switch to the **Debug** view.
@@ -26,7 +23,7 @@ The Codewind language server for Node.js profiling annotates your Node.js code w
 7. If you want to debug the server and use the launch configuration, click **Attach to Server**.
 
 ## Testing
-To enable testing, run the `npm install` command in the `codewind-node-profiler` folder.
+To enable testing, run the `npm install` command in the `codewind-ls-node-prof` folder.
 
 Complete the following steps to test in VS Code:
 1. Press **Ctrl**+**Shift**+**B** on Windows or **Cmd**+**Shift**+**B** on Mac to compile the client and server.
@@ -39,27 +36,13 @@ Complete the following steps to test in VS Code:
 
 ## Building the extension
 Complete the following steps to build a `.vsix` extension package that can then be installed and published:
-1. Run `npm install` in the `codewind-node-profiler` folder.
+1. Run `npm install` in the `codewind-ls-node-prof` folder.
 2. Install the `vsce` package globally with `npm install -g vsce`.
-3. Run `vsce package` in the `codewind-node-profiler` folder. A `vsix` file is generated.
+3. Run `vsce package` in the `codewind-ls-node-prof` folder. A `vsix` file is generated.
 
-### Prerequisites
-
-- The Codewind extension (available [here](https://marketplace.visualstudio.com/items?itemName=IBM.codewind)) installed in Visual Studio Code.
-- A Node.js project bound to Codewind.
-
-### With Visual Studio Code
-
-- Open your Node.js project's Performance Dashboard by right-clicking on the project in the Codewind section of Visual Studio Code and selecting `Open Performance Dashboard`.
-- Once the Performance Dashboard opens, click `Run Load Test`.
-- This will create profiling data in a `load-test/[datestamp]/profiling.json` file in your Codewind project.
-- In Visual Studio Code open a JavaScript file in your project.
-- The extension will highlight any lines which were found in the profiling data and annotate them to show how often they were seen and where they were called from.
-=======
 ## Installing the extension
 Complete the following steps to install the extension:
-1. Run `code --install-extension <name of generated vsix file>` in the `codewind-node-profiler` folder.
+1. Run `code --install-extension <name of generated vsix file>` in the `codewind-ls-node-prof` folder.
 2. Restart Visual Studio Code. The extension appears in your list of installed extensions.
 
 For more information, see [Publishing Extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code website.
-
