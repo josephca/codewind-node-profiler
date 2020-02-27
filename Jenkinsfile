@@ -1,4 +1,5 @@
 #!groovy​
+
 pipeline {
     agent {
         kubernetes {
@@ -17,9 +18,15 @@ spec:
         }
     }
 
-	 options {
+	options {
         timestamps()
         skipStagesAfterUnstable()
+        timeout(time: 1, unit: 'HOURS')
+    }
+
+    environment {
+        // https://stackoverflow.com/a/43264045
+        HOME="."
     }
 
     stages {
